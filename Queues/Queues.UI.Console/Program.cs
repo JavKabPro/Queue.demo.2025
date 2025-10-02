@@ -1,12 +1,18 @@
 ﻿using Queuearray;
+using QueueList;
 using System.ComponentModel.Design;
+//Opcion 1
+//var queue = new QueueUsingArray<int>(5);
+//opcion 2
+//var queue = new QueueUsingList<int>();
+//opcion 3
+var queue = new Queue<int>();
 
-var queue = new QueueUsingArray<int>(5);
 var opc = "0";
 do
 {
     opc = Menu();
-    switch(opc)
+    switch (opc)
     {
         case "1":
             try
